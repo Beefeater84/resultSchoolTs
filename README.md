@@ -4,4 +4,6 @@ Now I've decided to update my knowledge of typescript with https://result.school
 
 That's the first task.
 
-to build: run "build-dev"
+## to build: 
+```run "build-dev"```
+

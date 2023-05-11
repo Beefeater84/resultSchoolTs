@@ -1,0 +1,136 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/reset.scss ***!
+  \*********************************************************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss ***!
+  \**********************************************************************************************************/
+html {
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  --h-color: #ED7138;
+  --border-color: #ccc; }
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(a318dfda9223c9b6bcc1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(6px);
+  position: fixed; }
+
+h1 {
+  padding-block: 1.5rem;
+  color: var(--h-color);
+  font-size: 3rem;
+  font-weight: bold; }
+
+.box_sound_btn {
+  background-position: center;
+  background-size: 400px 200px; }
+
+.box_sound_btn.pause .icon {
+  display: none; }
+
+#sunBtn {
+  background-image: url(a318dfda9223c9b6bcc1.jpg); }
+
+#btnRain {
+  background-image: url(5df8a5c7dcda04cc3f1e.jpg); }
+
+#sunSnow {
+  background-image: url(032cb68ed96890ac0c3b.jpg); }
+
+.sound_player {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute; }
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.box {
+  text-align: center;
+  margin: 0 auto; }
+  .box_sound_btns {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .box_sound_btn {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; }
+  .box_sound_btn_bgImage {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover; }
+
+.volume-wr {
+  margin-block: 1rem; }
+

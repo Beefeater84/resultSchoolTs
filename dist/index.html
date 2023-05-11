@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Result school homework</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div class="bg" id="background">
+</div>
+<div class="container">
+    <div class="box">
+        <h1>Weather sounds</h1>
+        <div class="box_sound_btns">
+            <button class="box_sound_btn" id="sunBtn" data-sound="./assets/sounds/summer.mp3" data-imgSrc="./assets/summer-bg.jpg">
+                <img src="./assets/icons/sun.svg" alt="" width="60" height="60" class="icon">
+            </button>
+            <button class="box_sound_btn" id="btnRain" data-sound="./assets/sounds/rain.mp3" data-imgSrc="./assets/rainy-bg.jpg">
+                <img src="./assets/icons/cloud-rain.svg" alt="" width="60" height="60" class="icon">
+            </button>
+            <button class="box_sound_btn" id="sunSnow" data-sound="./assets/sounds/winter.mp3" data-imgSrc="./assets/winter-bg.jpg">
+                <img src="./assets/icons/cloud-snow.svg" alt="" width="60" height="60" class="icon">
+            </button>
+        </div>
+
+        <div class="volume-wr">
+            <input type="range" min="0" max="100" id="volume" name="volume">
+        </div>
+
+
+        <audio src="/" id="sound_player" loop></audio>
+    </div>
+</div>
+<script defer src="bundle.js"></script>
+</body>
+</html>

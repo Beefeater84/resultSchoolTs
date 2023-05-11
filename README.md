@@ -5,5 +5,10 @@ Now I've decided to update my knowledge of typescript with https://result.school
 That's the first task.
 
 ## to build: 
-```run "build-dev"```
+
+This does not run the test server, but only compiles files from src. To view the project you need to run ```dist/html``` on the built in IDE server
+
+```
+run "build-dev"
+```
 
